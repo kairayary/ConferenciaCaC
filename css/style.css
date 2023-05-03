@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+
+    position: relative;
+}
+
+.imgBanner {
+    width: 100%;
+    overflow: hidden;
+    height: 90vh;
+    background-blend-mode: soft-light;
+
+}
+
+
+.cardBanner {
+    position: absolute;
+    right: 60px;
+    top: 290px;
+    color: white;
+    font-weight: 600;
+    text-align: right;
+    font-size: 1.4564rem;
+    text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+}
+
+.cardOradores {
+    background-color: white;
+    height: 100%;
+
+}
+
+.containerOradores {
+    display: flex;
+    margin-top: 2%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleOradores,
+.titleConvert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardsOradores {
+    height: 60%;
+    align-items: center;
+
+}
+
+.card-oradores {
+    width: 18rem;
+
+}
+
+.card-subtitled {
+    text-align: justify !important;
+}
+
+.bannerDos {
+    margin-top: 5%;
+    width: 100%;
+
+
+}
+
+
+.bannerDos_img {
+    width: 50%;
+    background-size: contain;
+
+}
+
+.description {
+    width: 50%;
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+}
+
+.convert {
+    height: 80vh;
+    width: 100%;
+}
+
+.containerConvert {
+    text-align: center;
+    margin-top: 4%;
+}
+
+.contact {
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
+}
+
+footer {
+    width: 100%;
+    height: 11rem;
+    background-color: #1d284d;
+
+}
+
+.containerFooter {
+
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    text-align: center;
+    padding-top: 3rem;
+
+}
+
+.footer-nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+.footer-link {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+}
+
+/*diseño responsive*/
+
+@media screen and (max-width: 425px) {
+    .imgBanner {
+        width: 425px;
+        height: 150vh;
+        object-fit: cover;
+
+    }
+
+    .containerOradores{
+        padding-left: 19%;
+    }
+    .cardBanner {
+        position: absolute;
+        right: 29px;
+     
+        
+    }
+    .container_bannerDos {
+        height: 54em;
+        
+    }
+    .bannerDos_img{
+        object-fit: cover;
+    }
+    .footer {
+        
+        height: 11rem;
+    }
+    .containerFooter{
+    
+        height: 100%;
+         padding: 0;
+       }
+    .footer-nav {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+    }
+
+ 
+
+}
